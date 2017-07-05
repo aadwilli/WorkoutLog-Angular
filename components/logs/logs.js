@@ -31,7 +31,7 @@
 				bindToController: this,
 				resolve: {
 					getSingleLog: function($stateParams, LogsService) {
-						return LogsService.fetchOne($stateParams.id);
+						return LogsService.fetchOne($stateParams.id);	
 					},
 
 					getUserDefinitions: function(DefineService) {
@@ -66,6 +66,7 @@
 			}
 			LogsService.updateLog(logToUpdate)
 				.then(function(){
+					console.log('gross')
 					$state.go('history');
 				});
 		};
