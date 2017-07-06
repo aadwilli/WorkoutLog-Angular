@@ -25,7 +25,7 @@
 	app.config(config);
 
 	var API_BASE = location.hostname === "localhost" ?
-		"//localhost:3000/api/" : "//gutbuster-api.herokuapp.com/api/";
+		"//localhost:3000/api/" : "//aw-gutbuster-api.herokuapp.com/api/";
 	app.constant('API_BASE', API_BASE);
 })();
 (function(){
