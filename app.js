@@ -4,10 +4,9 @@
 			'workoutlog.define',
 			'workoutlog.logs',
 			'workoutlog.history',
-			'workoutlog.feed',
 			'workoutlog.auth.signup',
 			'workoutlog.auth.signin'
-		]);
+		])
 	.factory('socket', function(socketFactory){
 		var myIoSocket = io.connect('http://localhost:3000');
 
